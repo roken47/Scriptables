@@ -46,14 +46,15 @@ function createRow(title, number) {
 function createWidget(pretitle, title, subtitle, color) {
   let w = new ListWidget()
   w.backgroundColor = new Color(color)
-  w.centerAlignContent()
   let preTxt = w.addText(pretitle)
   preTxt.textColor = Color.white()
   preTxt.textOpacity = 0.8
   preTxt.textSize = 16
+  w.addSpacer(5)
   let titleTxt = w.addText(title)
   titleTxt.textColor = Color.white()
-  titleTxt.textSize = 23
+  titleTxt.textSize = 22
+  w.addSpacer(5)
   let subTxt = w.addText(subtitle)
   subTxt.textColor = Color.white()
   subTxt.textOpacity = 0.8
