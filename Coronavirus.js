@@ -49,15 +49,15 @@ function createWidget(pretitle, title, subtitle, color) {
   let preTxt = w.addText(pretitle)
   preTxt.textColor = Color.white()
   preTxt.textOpacity = 0.8
-  preTxt.textSize = 16
+  preTxt.font = Font.systemFont(16)
   w.addSpacer(5)
   let titleTxt = w.addText(title)
   titleTxt.textColor = Color.white()
-  titleTxt.textSize = 22
+  titleTxt.font = Font.systemFont(22)
   w.addSpacer(5)
   let subTxt = w.addText(subtitle)
   subTxt.textColor = Color.white()
   subTxt.textOpacity = 0.8
-  subTxt.textSize = 18
+  subTxt.font = Font.systemFont(18)
   return w
 }
