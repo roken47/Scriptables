@@ -2,7 +2,7 @@
 // These must be at the very top of the file. Do not edit.
 // icon-color: deep-green; icon-glyph: user-md;
 // change "country" to a value from https://coronavirus-19-api.herokuapp.com/countries/
-const country = "Israel"
+const country = "USA"
 const url = `https://coronavirus-19-api.herokuapp.com/countries/${country}`
 const req = new Request(url)
 const res = await req.loadJSON()
